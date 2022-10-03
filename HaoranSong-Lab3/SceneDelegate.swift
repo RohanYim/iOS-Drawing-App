@@ -46,7 +46,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
+    
+    func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        let alert = UIAlertController(title: "Developer Message", message: "Enjoy the best drawing APP", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        switch shortcutItem.type {
+        case "messageAction":
+            self.window!.rootViewController?.present(alert, animated: true, completion: nil)
+        case "startFreeDraw":
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "freeDraw") as! FreeDrawViewController
+            if let homeVC = self.window?.rootViewController as? UINavigationController {
+            homeVC.pushViewController(nextViewController, animated: true)
+            }
+        default:
+            break
+        }
+    }
 }
 

@@ -2,6 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We would like to save image to your photo library</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We would like to save image to your photo library</string>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeFavorite</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Start Free Draw</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>startFreeDraw</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Free Draw</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeMail</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Show Developer Message</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Show Message</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>messageAction</string>
+		</dict>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

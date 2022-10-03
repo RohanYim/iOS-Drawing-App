@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9413822B28E76AC000350AB0 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413822A28E76ABF00350AB0 /* Function.swift */; };
+		9461CDA028E88640005E90A8 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461CD9F28E88640005E90A8 /* Rectangle.swift */; };
+		9461CDA228E89DCB005E90A8 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461CDA128E89DCB005E90A8 /* Triangle.swift */; };
+		9485BD9828E9F63C007FBB22 /* FreeDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9485BD9728E9F63C007FBB22 /* FreeDrawViewController.swift */; };
+		9485BD9A28EA0194007FBB22 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9485BD9928EA0194007FBB22 /* Line.swift */; };
 		94AC75AA28E73F85007C685A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC75A928E73F85007C685A /* AppDelegate.swift */; };
 		94AC75AC28E73F85007C685A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC75AB28E73F85007C685A /* SceneDelegate.swift */; };
 		94AC75AE28E73F85007C685A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC75AD28E73F85007C685A /* ViewController.swift */; };
 		94AC75B128E73F85007C685A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AC75AF28E73F85007C685A /* Main.storyboard */; };
 		94AC75B328E73F86007C685A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AC75B228E73F86007C685A /* Assets.xcassets */; };
 		94AC75B628E73F86007C685A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AC75B428E73F86007C685A /* LaunchScreen.storyboard */; };
+		94AC75C028E73FC4007C685A /* DrawingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC75BD28E73FC4007C685A /* DrawingItem.swift */; };
+		94AC75C128E73FC4007C685A /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC75BE28E73FC4007C685A /* Shape.swift */; };
+		94AC75C228E73FC4007C685A /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC75BF28E73FC4007C685A /* DrawingView.swift */; };
+		94AC75C428E75554007C685A /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC75C328E75554007C685A /* Circle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9413822A28E76ABF00350AB0 /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		9461CD9F28E88640005E90A8 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		9461CDA128E89DCB005E90A8 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		9485BD9728E9F63C007FBB22 /* FreeDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeDrawViewController.swift; sourceTree = "<group>"; };
+		9485BD9928EA0194007FBB22 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		94AC75A628E73F85007C685A /* HaoranSong-Lab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HaoranSong-Lab3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AC75A928E73F85007C685A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94AC75AB28E73F85007C685A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,10 @@
 		94AC75B228E73F86007C685A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94AC75B528E73F86007C685A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94AC75B728E73F86007C685A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94AC75BD28E73FC4007C685A /* DrawingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingItem.swift; sourceTree = "<group>"; };
+		94AC75BE28E73FC4007C685A /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		94AC75BF28E73FC4007C685A /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		94AC75C328E75554007C685A /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +77,15 @@
 				94AC75A928E73F85007C685A /* AppDelegate.swift */,
 				94AC75AB28E73F85007C685A /* SceneDelegate.swift */,
 				94AC75AD28E73F85007C685A /* ViewController.swift */,
+				9485BD9728E9F63C007FBB22 /* FreeDrawViewController.swift */,
+				9485BD9928EA0194007FBB22 /* Line.swift */,
+				9413822A28E76ABF00350AB0 /* Function.swift */,
+				94AC75BD28E73FC4007C685A /* DrawingItem.swift */,
+				94AC75BF28E73FC4007C685A /* DrawingView.swift */,
+				94AC75BE28E73FC4007C685A /* Shape.swift */,
+				94AC75C328E75554007C685A /* Circle.swift */,
+				9461CDA128E89DCB005E90A8 /* Triangle.swift */,
+				9461CD9F28E88640005E90A8 /* Rectangle.swift */,
 				94AC75AF28E73F85007C685A /* Main.storyboard */,
 				94AC75B228E73F86007C685A /* Assets.xcassets */,
 				94AC75B428E73F86007C685A /* LaunchScreen.storyboard */,
@@ -138,9 +165,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9413822B28E76AC000350AB0 /* Function.swift in Sources */,
+				94AC75C428E75554007C685A /* Circle.swift in Sources */,
+				94AC75C128E73FC4007C685A /* Shape.swift in Sources */,
+				9461CDA028E88640005E90A8 /* Rectangle.swift in Sources */,
 				94AC75AE28E73F85007C685A /* ViewController.swift in Sources */,
 				94AC75AA28E73F85007C685A /* AppDelegate.swift in Sources */,
+				94AC75C228E73FC4007C685A /* DrawingView.swift in Sources */,
+				9461CDA228E89DCB005E90A8 /* Triangle.swift in Sources */,
 				94AC75AC28E73F85007C685A /* SceneDelegate.swift in Sources */,
+				9485BD9A28EA0194007FBB22 /* Line.swift in Sources */,
+				94AC75C028E73FC4007C685A /* DrawingItem.swift in Sources */,
+				9485BD9828E9F63C007FBB22 /* FreeDrawViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
