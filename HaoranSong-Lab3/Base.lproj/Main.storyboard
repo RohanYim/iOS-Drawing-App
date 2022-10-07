@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-5S-IRr">
-                                <rect key="frame" x="0.0" y="644" width="390" height="200"/>
+                                <rect key="frame" x="0.0" y="616" width="390" height="228"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SxI-Qe-NJQ">
-                                        <rect key="frame" x="0.0" y="136" width="390" height="32"/>
+                                        <rect key="frame" x="0.0" y="164" width="390" height="32"/>
                                         <segments>
                                             <segment title="Draw"/>
                                             <segment title="Move"/>
@@ -31,7 +31,7 @@
                                         </connections>
                                     </segmentedControl>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ov0-lc-OCd">
-                                        <rect key="frame" x="0.0" y="95" width="390" height="32"/>
+                                        <rect key="frame" x="0.0" y="123" width="390" height="32"/>
                                         <segments>
                                             <segment title="" image="circlebadge" catalog="system"/>
                                             <segment title="" image="triangle" catalog="system"/>
@@ -42,7 +42,7 @@
                                         </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mG9-IC-brG">
-                                        <rect key="frame" x="0.0" y="51" width="390" height="34"/>
+                                        <rect key="frame" x="0.0" y="39" width="390" height="34"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jg-6X-VUM">
                                                 <rect key="frame" x="0.0" y="0.0" width="65" height="34"/>
@@ -100,7 +100,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSc-xm-fl5">
-                                        <rect key="frame" x="254.66666666666666" y="0.0" width="127.33333333333334" height="39"/>
+                                        <rect key="frame" x="254.66666666666666" y="0.0" width="127.33333333333334" height="31"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
                                         <state key="normal" title="Button"/>
@@ -111,27 +111,40 @@
                                             <action selector="funcSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uJ2-5e-aby"/>
                                         </connections>
                                     </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M6Q-8L-cqH">
+                                        <rect key="frame" x="0.0" y="83" width="390" height="32"/>
+                                        <segments>
+                                            <segment title="SolidShape"/>
+                                            <segment title="OutlineShape"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="formatSelect:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z9x-3t-UqM"/>
+                                        </connections>
+                                    </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="mG9-IC-brG" secondAttribute="trailing" id="1Zc-af-WJG"/>
-                                    <constraint firstItem="sSc-xm-fl5" firstAttribute="top" secondItem="8Ub-5S-IRr" secondAttribute="top" id="7mT-kD-wyN"/>
+                                    <constraint firstItem="Ov0-lc-OCd" firstAttribute="top" secondItem="M6Q-8L-cqH" secondAttribute="bottom" constant="9" id="46Y-hY-Rvy"/>
+                                    <constraint firstItem="M6Q-8L-cqH" firstAttribute="leading" secondItem="8Ub-5S-IRr" secondAttribute="leading" id="4c1-9K-YxO"/>
                                     <constraint firstItem="sSc-xm-fl5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Ub-5S-IRr" secondAttribute="leading" constant="20" symbolic="YES" id="9k2-Bf-eFk"/>
-                                    <constraint firstItem="mG9-IC-brG" firstAttribute="top" secondItem="sSc-xm-fl5" secondAttribute="bottom" constant="12" id="I7O-DC-xnu"/>
+                                    <constraint firstItem="mG9-IC-brG" firstAttribute="top" secondItem="sSc-xm-fl5" secondAttribute="bottom" constant="8" symbolic="YES" id="QDA-uR-2i9"/>
                                     <constraint firstAttribute="bottom" secondItem="SxI-Qe-NJQ" secondAttribute="bottom" constant="33" id="QoM-25-QBb"/>
+                                    <constraint firstAttribute="trailing" secondItem="M6Q-8L-cqH" secondAttribute="trailing" id="avq-WR-PO7"/>
                                     <constraint firstItem="SxI-Qe-NJQ" firstAttribute="leading" secondItem="8Ub-5S-IRr" secondAttribute="leading" id="eHp-fF-wKK"/>
                                     <constraint firstItem="SxI-Qe-NJQ" firstAttribute="top" secondItem="Ov0-lc-OCd" secondAttribute="bottom" constant="10" id="hxD-8p-AzL"/>
-                                    <constraint firstItem="Ov0-lc-OCd" firstAttribute="top" secondItem="mG9-IC-brG" secondAttribute="bottom" constant="10" id="j4M-lu-JPc"/>
                                     <constraint firstAttribute="trailing" secondItem="sSc-xm-fl5" secondAttribute="trailing" constant="8" id="jOy-rw-zc4"/>
+                                    <constraint firstItem="sSc-xm-fl5" firstAttribute="top" secondItem="8Ub-5S-IRr" secondAttribute="top" id="mkl-Qa-WFJ"/>
+                                    <constraint firstItem="M6Q-8L-cqH" firstAttribute="top" secondItem="mG9-IC-brG" secondAttribute="bottom" constant="10" id="oY3-w9-M5d"/>
                                     <constraint firstItem="mG9-IC-brG" firstAttribute="leading" secondItem="Ov0-lc-OCd" secondAttribute="leading" id="otg-ke-pPO"/>
                                     <constraint firstAttribute="trailing" secondItem="SxI-Qe-NJQ" secondAttribute="trailing" id="phE-N5-qd0"/>
-                                    <constraint firstAttribute="height" constant="200" id="rVf-Km-NYP"/>
+                                    <constraint firstAttribute="height" constant="228" id="rVf-Km-NYP"/>
                                     <constraint firstItem="mG9-IC-brG" firstAttribute="leading" secondItem="8Ub-5S-IRr" secondAttribute="leading" id="sTf-iO-4Mv"/>
                                     <constraint firstItem="mG9-IC-brG" firstAttribute="trailing" secondItem="Ov0-lc-OCd" secondAttribute="trailing" id="zgE-p6-XLI"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUx-tr-byX">
-                                <rect key="frame" x="0.0" y="88" width="390" height="556"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="528"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                             </view>

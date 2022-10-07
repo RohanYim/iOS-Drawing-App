@@ -23,11 +23,15 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
     var currentCircle: Circle?
     var currentRect: Rectangle?
     var currentTri: Triangle?
+    var currentOutlineCircle: OutlineCircle?
+    var currentOutlineRect: OutlineRectangle?
+    var currentOutlineTri: OutlineTriangle?
     var currentIndex: Int = -1
 
     var shapeCanvas: DrawingView!
     var shapeValue = 0
     var funcValue = 0
+    var formatValue = 0
     
     @IBOutlet weak var blackLb: UIButton!
     @IBOutlet weak var greenLb: UIButton!
@@ -64,12 +68,15 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
     @IBAction func funcSelect(_ sender: UISegmentedControl) {
         funcValue = sender.selectedSegmentIndex
     }
+    @IBAction func formatSelect(_ sender: UISegmentedControl) {
+        formatValue = sender.selectedSegmentIndex
+    }
     
     @IBAction func funcSave(_ sender: Any) {
         if(shapeCanvas.items.count>0){
             let frame = drawingArea.frame
             UIGraphicsBeginImageContext(frame.size)
-            view.layer.render(in: UIGraphicsGetCurrentContext()!)
+            drawingArea.layer.render(in: UIGraphicsGetCurrentContext()!)
             let image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             self.loadImage(image: image!)
@@ -191,11 +198,27 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         if(funcValue==0){
             shapeCanvas.backgroundColor = UIColor.clear
             if(shapeValue==0){
-                currentCircle = Circle(origin: touchPoint, color: currentLb.backgroundColor!)
+                if(formatValue==0){
+                    currentCircle = Circle(origin: touchPoint, color: currentLb.backgroundColor!)
+                }
+                else{
+                    currentOutlineCircle = OutlineCircle(origin: touchPoint, color: currentLb.backgroundColor!)
+                }
+                
             }else if(shapeValue==1){
-                currentTri = Triangle(origin: touchPoint, color: currentLb.backgroundColor!)
+                if(formatValue==0){
+                    currentTri = Triangle(origin: touchPoint, color: currentLb.backgroundColor!)
+                }
+                else{
+                    currentOutlineTri = OutlineTriangle(origin: touchPoint, color: currentLb.backgroundColor!)
+                }
             }else if(shapeValue==2){
-                currentRect = Rectangle(origin: touchPoint, color: currentLb.backgroundColor!)
+                if(formatValue==0){
+                    currentRect = Rectangle(origin: touchPoint, color: currentLb.backgroundColor!)
+                }
+                else{
+                    currentOutlineRect = OutlineRectangle(origin: touchPoint, color: currentLb.backgroundColor!)
+                }
             }
         }else if(funcValue==1){
             for (index,item) in shapeCanvas.items.reversed().enumerated(){
@@ -242,16 +265,38 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if(funcValue==0){
             if(shapeValue==0){
-                if let newCircle = currentCircle {
-                    shapeCanvas.items.append(newCircle)
+                if(formatValue==0){
+                    if let newCircle = currentCircle {
+                        shapeCanvas.items.append(newCircle)
+                    }
                 }
+                else{
+                    if let newCircle = currentOutlineCircle {
+                        shapeCanvas.items.append(newCircle)
+                    }
+                }
+
             }else if(shapeValue==1){
-                if let newTri = currentTri {
-                    shapeCanvas.items.append(newTri)
+                if(formatValue==0){
+                    if let newTri = currentTri {
+                        shapeCanvas.items.append(newTri)
+                    }
+                }
+                else{
+                    if let newTri = currentOutlineTri {
+                        shapeCanvas.items.append(newTri)
+                    }
                 }
             }else if(shapeValue==2){
-                if let newRect = currentRect {
-                    shapeCanvas.items.append(newRect)
+                if(formatValue==0){
+                    if let newRect = currentRect {
+                        shapeCanvas.items.append(newRect)
+                    }
+                }
+                else{
+                    if let newRect = currentOutlineRect {
+                        shapeCanvas.items.append(newRect)
+                    }
                 }
             }
         }else if(funcValue==1){

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9413822B28E76AC000350AB0 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9413822A28E76ABF00350AB0 /* Function.swift */; };
+		943FEFA628EF962F0016879C /* SolidShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943FEFA528EF962F0016879C /* SolidShape.swift */; };
+		943FEFA828EF96CC0016879C /* OutlineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943FEFA728EF96CC0016879C /* OutlineShape.swift */; };
+		943FEFAA28EF97050016879C /* OutlineCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943FEFA928EF97050016879C /* OutlineCircle.swift */; };
+		943FEFAC28EFAFFE0016879C /* OutlineTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943FEFAB28EFAFFE0016879C /* OutlineTriangle.swift */; };
+		943FEFAE28EFB00B0016879C /* OutlineRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943FEFAD28EFB00B0016879C /* OutlineRectangle.swift */; };
 		9461CDA028E88640005E90A8 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461CD9F28E88640005E90A8 /* Rectangle.swift */; };
 		9461CDA228E89DCB005E90A8 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461CDA128E89DCB005E90A8 /* Triangle.swift */; };
 		9485BD9828E9F63C007FBB22 /* FreeDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9485BD9728E9F63C007FBB22 /* FreeDrawViewController.swift */; };
@@ -26,6 +31,11 @@
 
 /* Begin PBXFileReference section */
 		9413822A28E76ABF00350AB0 /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		943FEFA528EF962F0016879C /* SolidShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidShape.swift; sourceTree = "<group>"; };
+		943FEFA728EF96CC0016879C /* OutlineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineShape.swift; sourceTree = "<group>"; };
+		943FEFA928EF97050016879C /* OutlineCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineCircle.swift; sourceTree = "<group>"; };
+		943FEFAB28EFAFFE0016879C /* OutlineTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineTriangle.swift; sourceTree = "<group>"; };
+		943FEFAD28EFB00B0016879C /* OutlineRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineRectangle.swift; sourceTree = "<group>"; };
 		9461CD9F28E88640005E90A8 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 		9461CDA128E89DCB005E90A8 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		9485BD9728E9F63C007FBB22 /* FreeDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeDrawViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +93,12 @@
 				94AC75BD28E73FC4007C685A /* DrawingItem.swift */,
 				94AC75BF28E73FC4007C685A /* DrawingView.swift */,
 				94AC75BE28E73FC4007C685A /* Shape.swift */,
+				943FEFA528EF962F0016879C /* SolidShape.swift */,
 				94AC75C328E75554007C685A /* Circle.swift */,
+				943FEFA928EF97050016879C /* OutlineCircle.swift */,
+				943FEFAB28EFAFFE0016879C /* OutlineTriangle.swift */,
+				943FEFAD28EFB00B0016879C /* OutlineRectangle.swift */,
+				943FEFA728EF96CC0016879C /* OutlineShape.swift */,
 				9461CDA128E89DCB005E90A8 /* Triangle.swift */,
 				9461CD9F28E88640005E90A8 /* Rectangle.swift */,
 				94AC75AF28E73F85007C685A /* Main.storyboard */,
@@ -167,16 +182,21 @@
 			files = (
 				9413822B28E76AC000350AB0 /* Function.swift in Sources */,
 				94AC75C428E75554007C685A /* Circle.swift in Sources */,
+				943FEFAA28EF97050016879C /* OutlineCircle.swift in Sources */,
 				94AC75C128E73FC4007C685A /* Shape.swift in Sources */,
 				9461CDA028E88640005E90A8 /* Rectangle.swift in Sources */,
+				943FEFA828EF96CC0016879C /* OutlineShape.swift in Sources */,
+				943FEFAC28EFAFFE0016879C /* OutlineTriangle.swift in Sources */,
 				94AC75AE28E73F85007C685A /* ViewController.swift in Sources */,
 				94AC75AA28E73F85007C685A /* AppDelegate.swift in Sources */,
+				943FEFAE28EFB00B0016879C /* OutlineRectangle.swift in Sources */,
 				94AC75C228E73FC4007C685A /* DrawingView.swift in Sources */,
 				9461CDA228E89DCB005E90A8 /* Triangle.swift in Sources */,
 				94AC75AC28E73F85007C685A /* SceneDelegate.swift in Sources */,
 				9485BD9A28EA0194007FBB22 /* Line.swift in Sources */,
 				94AC75C028E73FC4007C685A /* DrawingItem.swift in Sources */,
 				9485BD9828E9F63C007FBB22 /* FreeDrawViewController.swift in Sources */,
+				943FEFA628EF962F0016879C /* SolidShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

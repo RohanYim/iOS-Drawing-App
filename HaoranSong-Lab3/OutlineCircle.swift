@@ -1,13 +1,13 @@
 //
-//  Circle.swift
+//  OutlineCircle.swift
 //  HaoranSong-Lab3
 //
-//  Created by Haoran Song on 9/30/22.
+//  Created by Haoran Song on 10/6/22.
 //
 
 import UIKit
 
-class Circle: SolidShape{
+class OutlineCircle: OutlineShape{
     
     var path: UIBezierPath
     var radius: CGFloat
@@ -22,11 +22,13 @@ class Circle: SolidShape{
     
     
     override func draw() {
-        color.setFill()
+        color.setStroke()
         path.removeAllPoints()
         path.addArc(withCenter: origin, radius: radius, startAngle: 0, endAngle: CGFloat(Float.pi * 2), clockwise: true)
         path.rotate(by: lastRotation)
-        path.fill()
+        let lengths:[CGFloat] = [8.0, 4.0, 16.0, 8.0]
+        path.setLineDash(lengths, count: 4, phase: 12)
+        path.stroke()
     }
     
     override func contains(point: CGPoint) -> Bool {

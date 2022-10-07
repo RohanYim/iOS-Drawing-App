@@ -48,7 +48,7 @@ class FreeDrawViewController: UIViewController {
         if(shapeCanvas.items.count>0){
             let frame = drawingArea.frame
             UIGraphicsBeginImageContext(frame.size)
-            view.layer.render(in: UIGraphicsGetCurrentContext()!)
+            drawingArea.layer.render(in: UIGraphicsGetCurrentContext()!)
             let image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             self.loadImage(image: image!)
